@@ -14,8 +14,8 @@ function createUsers (userCount, prefix) {
 	return [...Array(userCount).keys()]
 		.map((key) => `${prefix} user ${key}`);
 }
-/** 
-* A generator function is one where you can yield the execution call. 
+/**
+* A generator function is one where you can yield the execution call.
 * It returns a special `Generator object`
 * The object provides a `next()` function which returns { value: <>, done: <true|false> }
 */
@@ -26,7 +26,7 @@ function * generateTickets  () {
 	while (currentCount < totalTicketCount) {
 		yield ++currentCount;
 	}
-	// you can't do the following 
+	// you can't do the following
 	// becuase yield is no longer in the context of a generator.
 	// [...Array(totalTicketCount).keys()].forEach((key) => yield key);
 	return;
@@ -81,4 +81,3 @@ q = createUsers(5, 'test3');
 // should be the same output
 iterateOverTickets1(q);
 iterateOverTickets1(q);
-

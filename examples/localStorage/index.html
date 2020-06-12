@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Local Storage Example</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </head>
+  <body>
+    <h2>Local Storage Example: This will persist until it is cleared</h2>
+    <form class="store">
+      <label for="key">Type a key</label>
+      <input type="text" name="key" value="" class="storeKey">
+      <label for="value">Type a value</label>
+      <input type="text" name="value" value="" class="storeValue">
+      <button type="button" name="button" class="addStorage">Add to Local storage</button>
+      <br /> <br />
+      <button type="button" name="clearStorage" class="clearStorage">Clear Storage</button>
+      <label for="localStorageDisplay" class="storageLength"></label>
+    </form>
+    <h3>
+      Get Stored Value
+    </h3>
+    <form>
+      <label for="key">Type a key</label>
+      <input type="text" name="key" value="" class="storedKey">
+      <button type="button" name="button" class="getValue">Get Value</button>
+      <label for="displayValue" class="displayValue"></label>
+    </form>
+    <h3>
+      Get nth key by index
+    </h3>
+    <form>
+      <label for="key">Type a number</label>
+      <input type="text" name="key" value="" class="keyNumber">
+      <button type="button" name="button" class="getKey">Get Value</button>
+      <label for="displayKey" class="displayKey"></label>
+    </form>
+    <h3>
+      Delete an item from key
+    </h3>
+    <form class="clearItem">
+      <label for="key">Type a key to delete</label>
+      <input type="text" name="key" value="" class="keyToDelete">
+      <button type="button" name="button" class="deleteKey">Delete Key</button>
+    </form>
+  </body>
+</html>
